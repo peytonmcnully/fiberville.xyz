@@ -15,13 +15,17 @@
 	<!-- Css -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.2.0/milligram.min.css" />
 
+	<!-- Fancy -->
 	<link rel="stylesheet" href="https://milligram.github.io/styles/main.min.css" />
 
+	<!-- VueJS 2.0 -->
+	<script src="https://cdn.jsdelivr.net/vue/2.0.0-rc/vue.min.js"></script>
 
+	<!-- Raven -->
+	<script src="https://cdn.ravenjs.com/3.8.1/vue/raven.min.js" crossorigin="anonymous"></script>
 
-	<!--[if lt IE 9]>
-    	<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+	<!-- Raven config -->
+	<script>Raven.config('https://89fa95f333344d70bbcc8c8810c46319@sentry.io/117308').install();</script>
 
 </head>
 <body class="home-page">
@@ -197,5 +201,6 @@
 			</main>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAingliBQ1uO4HpRDIJ30EZyxaZI3mVaYc&libraries=drawing&v=3"></script>
+	<script src="scripts/main.js"></script>
 </body>
 </html>
