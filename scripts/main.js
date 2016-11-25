@@ -2,8 +2,9 @@
 
 // 1. Define route components.
 // These can be imported from other files
-const Foo = { template: '<div>foo</div>' }
-const Bar = { template: '<div>bar</div>' }
+const Hero = Vue.component('hero', { template: '#hero-template' })
+const Form = Vue.component('form', { template: '#form-template' })
+const GMap = Vue.component('gmap', { template: '<div>bar</div>' })
 
 // 2. Define some routes
 // Each route should map to a component. The "component" can
@@ -12,8 +13,9 @@ const Bar = { template: '<div>bar</div>' }
 // or just a component options object.
 // We'll talk about nested routes later.
 const routes = [
-  { path: '/foo', component: Foo },
-  { path: '/bar', component: Bar }
+  { path: '/', component: Hero },
+  { path: '/form', component: Form },
+  { path: '/map', component: GMap }
 ]
 
 // 3. Create the router instance and pass the `routes` option
@@ -22,7 +24,6 @@ const routes = [
 const router = new VueRouter({
   routes // short for routes: routes
 })
-
 
 const app = new Vue({
   router
